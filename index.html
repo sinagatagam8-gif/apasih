@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Biodata Mahasiswa</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 40px;
+        background: white;
+      }
+      .container {
+        width: 650px;
+        margin: auto;
+        padding: 10px 30px 30px 30px;
+      }
+      /* Bagian Header */
+      .kop {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+      }
+      .kop img {
+        width: 110px;
+      }
+      .judul-box {
+        width: 100%;
+        text-align: center;
+      }
+      .judul-kampus {
+        font-weight: bold;
+        margin: 0;
+        font-size: 18px;
+      }
+      .subjudul {
+        margin: 0;
+        margin-top: -3px;
+      }
+      .alamat {
+        font-size: 12px;
+        font-style: italic;
+        margin-top: 3px;
+      }
+      .garis {
+        border: 1px solid #2e3b8f;
+        margin-top: 15px;
+        margin-bottom: 20px;
+      }
+      .judul-biodata {
+        text-align: center;
+        font-weight: bold;
+        font-size: 17px;
+        margin-bottom: 25px;
+      }
+      .row {
+        margin-bottom: 14px;
+      }
+      .label {
+        display: inline-block;
+        width: 140px;
+        font-size: 14px;
+      }
+      .input {
+        width: 320px;
+        padding: 6px;
+        border: 1px solid #777;
+        border-radius: 3px;
+      }
+      .btn {
+        padding: 6px 18px;
+        border: 1px solid #000;
+        border-radius: 3px;
+        margin-right: 10px;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="kop">
+        <img src="img/logo.png" alt="Logo Kampus" />
+        <div class="judul-box">
+          <p class="judul-kampus">UNIVERSITAS INDRAPRASTA</p>
+          <p class="subjudul">(UNINDRA)</p>
+          <p class="alamat">Jl. Nangka No.58 Tanjung Barat – Jaksel</p>
+        </div>
+      </div>
+      <hr class="garis" />
+      <p class="judul-biodata">BIODATA MAHASISWA</p>
+      <form>
+        <div class="row">
+          <span class="label">NAMA</span>
+          <input type="text" class="input" />
+        </div>
+        <div class="row">
+          <span class="label">ALAMAT</span>
+          <input type="text" class="input" />
+        </div>
+        <div class="row">
+          <span class="label">TANGGAL LAHIR</span>
+          <input type="date" class="input" />
+        </div>
+        <div class="row">
+          <span class="label">TELP</span>
+          <input type="text" class="input" />
+        </div>
+        <div class="row">
+          <span class="label">EMAIL</span>
+          <input type="email" class="input" />
+        </div>
+        <div style="margin-left: 140px; margin-top: 10px">
+          <button class="btn">SIMPAN</button>
+          <button class="btn">BATAL</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
